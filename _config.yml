@@ -1,6 +1,6 @@
 # External gems
 gems:
-  - jekyll-archives # Sorry, not GitHub pages friendly!
+#  - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
 
 # Site settings
@@ -11,7 +11,7 @@ name: Jens Preussner
 description: > 
   I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jenzopr.github.io" # the base hostname & protocol for your site
+url: "http://jenzopr.github.io/" # the base hostname & protocol for your site
 cover: "assets/header_image.jpg"
 logo: "assets/logo.png"
 
@@ -21,17 +21,17 @@ paginate: 10
 paginate_path: "/page:num/"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
-jekyll-archives: 
-  enabled: 
-    - categories
-    - tags
-  layout: 'archive'
-  permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+#jekyll-archives: 
+#  enabled: 
+#    - categories
+#    - tags
+#  layout: 'archive'
+#  permalinks:
+#    category: '/category/:name/'
+#    tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: bencentra
+# disqus_shortname: bencentra
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
@@ -64,8 +64,8 @@ descriptions:
 social:
   - name: Twitter
     icon: twitter
-    username: "@TheBenCentra"
-    url: https://twitter.com/TheBenCentra
+    username: "@JenzoPr"
+    url: https://twitter.com/JenzoPr
     desc: Follow me on Twitter
     share_url: http://twitter.com/share
     share_title: ?text=
@@ -73,7 +73,7 @@ social:
 
   - name: Facebook
     icon: facebook
-    username: thebencentra
+    username: 
     url: 
     desc: Friend me on Facebook
     share_url: //www.facebook.com/sharer.php
@@ -82,8 +82,8 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
+    username: jenzopr
+    url: https://github.com/jenzopr
     desc: Fork me on GitHub
     share_url:
     share_title:
@@ -91,8 +91,8 @@ social:
 
   - name: LinkedIn
     icon: linkedin
-    username: Ben Centra
-    url: https://www.linkedin.com/pub/ben-centra/47/769/60a
+    username: 
+    url: 
     desc: Connect with me on LinkedIn
     share_url: //www.linkedin.com/shareArticle
     share_title: ?mini=true
