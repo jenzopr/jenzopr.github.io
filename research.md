@@ -28,11 +28,11 @@ My research focuses mainly on large-scale experiments and the development of met
 
 ### Background
 
-Period | Position
------------------
-since 11/2013 | Computational Biologist, MPI for Heart and Lung Research, Bad Nauheim
+Period            | Position
+----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------
+since 11/2013     | Computational Biologist, MPI for Heart and Lung Research, Bad Nauheim
 10/2012 - 10/2013 | Student Research Assistant, [Computational Genomics](http://www.gagneur.genzentrum.lmu.de/) group of the Gene Center, Munich (Dr. Julien Gagneur)
-2011 - 2013 | Master student at TUM &amp; LMU (Munich), Bioinformatics
+2011 - 2013       | Master student at TUM and LMU (Munich), Bioinformatics
 03/2011 - 10/2011 | Research Assistant, MPI for Heart and Lung Research, Bad Nauheim (Dr. Mario Looso)
-2008 - 2011 | Bachelor student at Goethe University (Frankfurt), Bioinformatics
+2008 - 2011       | Bachelor student at Goethe University (Frankfurt), Bioinformatics
 
