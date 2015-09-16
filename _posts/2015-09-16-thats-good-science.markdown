@@ -14,5 +14,5 @@ But Hold on! Sometimes its even a black screen with colored letters on it - indi
 Going back to the title, the question *What IS good science?* popped into my mind and I remembered [a great paper](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745) by Greg Wilson on best practises for scientific computing.
 In case you're just starting with computational biology or bioinformatics or never heard about how to write what is considered good software, just jave a look at the paper and stay tuned!
 
-Greg Wilson, D.A. Aruliah, C. Titus Brown, Neil P. Chue Hong, Matt Davis, Richard T. Guy, Steven H.D. Haddock, Kathryn D. Huff, Ian M. Mitchell, Mark D. Plumbley, Ben Waugh, Ethan P. White and Paul Wilson. Best Practices for Scientific Computing. **PLOS Biology** (2014), doi:     10.1371/journal.pbio.1001745
+Greg Wilson, D.A. Aruliah, C. Titus Brown, Neil P. Chue Hong, Matt Davis, Richard T. Guy, Steven H.D. Haddock, Kathryn D. Huff, Ian M. Mitchell, Mark D. Plumbley, Ben Waugh, Ethan P. White and Paul Wilson. Best Practices for Scientific Computing. **PLOS Biology** (2014), doi: 10.1371/journal.pbio.1001745
 
