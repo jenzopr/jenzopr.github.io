@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research Projects
+title: Research
 permalink: /research/
 categories: bioinformatics, computational biology
 tags: research, about me
