@@ -6,12 +6,12 @@ gems:
 # Site settings
 title: "Hi, my name is Jens."
 subtitle: "I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration."
-email: blcentra@gmail.com
+email: jens.preussner@mpi-bn.mpg.de
 name: Jens Preussner
 description: > 
   I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jenzopr.github.io/" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://jenzopr.github.io" # the base hostname & protocol for your site
 cover: "assets/header_image.jpg"
 logo: "assets/logo.png"
 
@@ -38,11 +38,11 @@ paginate_path: "/page:num/"
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
+  - cat: bioinformatics
+    desc: "Posts about bioinformatics and computational biology."
 
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: diy
+    desc: "I'm an enthusiastic do-it-yourself'er. Here are some projects I build on my own."
 
 # Social icons and sharing options
 #
