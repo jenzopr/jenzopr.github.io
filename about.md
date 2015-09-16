@@ -6,12 +6,12 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}assets/profile-placeholder.gif" title="Profile Picture" class="profile">
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+### Research Projects
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+My research focuses mainly on large-scale experiments and the development of methods/workflows for analysis of -omics data, especially in single cells. Besides high-throughput sequencing and transcriptomics in the process of regeneration, I gained experience in experiment design, statistical computing and analysis of small-sample data during my bachelor and master studies. My PHD thesis will be about highly efficient and scalable databases for all kinds of -omics data.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+#### Current projects
 
-[centrarium]: https://github.com/bencentra/centrarium
-[bencentra]: http://bencentra.com
-[jekyll]: https://github.com/jekyll/jekyll
+**ADMIRE - Analysis of DNA methylation in genomic regions**
+
+[ADMIRE](https://github.molgen.mpg.de/loosolab/admire) is a semi-automatic analysis pipeline and visualization tool for Infinium HumanMethylation450K Chips, that features all analysis steps from normalization to statistical testing to detect differential methylation in arbitrary genomic regions. [ADMIRE](https://github.molgen.mpg.de/loosolab/admire) is open-source, but can also be used online at <a href="https://bioinformatics.mpi-bn.mpg.de">https://bioinformatics.mpi-bn.mpg.de</a>
