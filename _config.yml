@@ -4,20 +4,20 @@ gems:
   - jekyll-sitemap
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
+title: "Hi, my name is Jens."
+subtitle: "I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration."
 email: blcentra@gmail.com
-name: Ben Centra
+name: Jens Preussner
 description: > 
-  A simple yet classy theme for your Jekyll website or blog.
-baseurl: "/centrarium/" # the subpath of your site, e.g. /blog/
-url: "http://bencentra.com" # the base hostname & protocol for your site
+  I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jenzopr.github.io" # the base hostname & protocol for your site
 cover: "assets/header_image.jpg"
 logo: "assets/logo.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
+paginate: 10
 paginate_path: "/page:num/"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
