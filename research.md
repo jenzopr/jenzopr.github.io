@@ -1,12 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Research Projects
+permalink: /research/
 ---
-
-<img src="{{ site.baseurl }}assets/profile-placeholder.gif" title="Profile Picture" class="profile">
-
-### Research Projects
 
 My research focuses mainly on large-scale experiments and the development of methods/workflows for analysis of -omics data, especially in single cells. Besides high-throughput sequencing and transcriptomics in the process of regeneration, I gained experience in experiment design, statistical computing and analysis of small-sample data during my bachelor and master studies. My PHD thesis will be about highly efficient and scalable databases for all kinds of -omics data.
 
