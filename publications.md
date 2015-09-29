@@ -21,4 +21,6 @@ tba
 
 ### Posters
 
-tba
+Title | Conference | Venue | Year
+------|------------|-------|-----
+Comparative analysis of differential DNA methylation with ADMIRE | RECOMB-CG | Frankfurt (Germany) | 2015
