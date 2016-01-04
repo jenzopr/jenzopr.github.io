@@ -40,7 +40,8 @@ paginate_path: "/page:num/"
 descriptions:
   - cat: bioinformatics
     desc: "Posts about bioinformatics and computational biology."
-
+  - cat: reading
+    desc: "A series of reading diary entries for exciting scientific literature."
   - cat: diy
     desc: "I'm an enthusiastic do-it-yourself'er. Here are some projects I build on my own."
 
