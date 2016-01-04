@@ -7,7 +7,7 @@ cover: "assets/dyes.jpg"
 categories: bioinformatics reading
 ---
 
-In a recent study published in *Nature* this week, the authors Silvia Domcke and Anaïs Flore Bardet were interested in finding transcription factors that are affected in their DNA binding abilities by DNA methylation.
+In a recent study published in *Nature* this week, the authors Silvia Domcke and Anais Flore Bardet were interested in finding transcription factors that are affected in their DNA binding abilities by DNA methylation.
 As argued by the authors, previous studies have shown that transcription factors bound to regulatory regions go along with low levels of DNA methylation during regulation of gene expression, but it is still a matter of debate if transcription factor binding is the cause for low methylation or *vice versa*. 
 To study the interplay, they created a triple knockout of *de novo* DNA methyltransferases that normally maintain the methylation of DNA, which is one of the epigenetic mechanisms that regulate gene expression.
 Their expectation was that truncated DNA methylation may result in sites newly bound by transcription factors, that were not able to bind before.
@@ -24,4 +24,4 @@ Put in a more general idea, the authors describe transcription factor hierarchie
 Notably, this implies that non-physical interactions between two transcription factors can be mediated by epigenetic marks: a methylation-*insensitive* transcription factor could remove blocking epigenetic marks and clear the DNA for binding of *sensitive* transcription factors.
 In this model, *settler* transcription factors that are inhibited to bind DNA through DNA methylation depend on indirect cooperation with specific *insensitive* factors, as well as the local activity of methylating and demethylating enzymes. 
 
-Silvia Domcke, Anaïs Flore Bardet, Paul Adrian Ginno, Dominik Hartl, Lukas Burger and Dirk Schübeler. Competition between DNA methylation and transcription factors determines binding of NRF1. **Nature** (*2015*), doi: 10.1038/nature16462 [weblink](http://www.nature.com/nature/journal/v528/n7583/full/nature16462.html)
+Silvia Domcke, Anais Flore Bardet, Paul Adrian Ginno, Dominik Hartl, Lukas Burger and Dirk Schübeler. Competition between DNA methylation and transcription factors determines binding of NRF1. **Nature** (*2015*), doi: 10.1038/nature16462 [weblink](http://www.nature.com/nature/journal/v528/n7583/full/nature16462.html)
