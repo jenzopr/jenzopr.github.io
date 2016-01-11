@@ -42,6 +42,8 @@ descriptions:
     desc: "Posts about bioinformatics and computational biology."
   - cat: reading
     desc: "A series of reading diary entries for exciting scientific literature."
+  - cat: misc
+    desc: "Some fit, others not: See below for miscellaneous posts."
   - cat: diy
     desc: "I'm an enthusiastic do-it-yourself'er. Here are some projects I build on my own."
 
