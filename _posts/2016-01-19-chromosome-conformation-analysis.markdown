@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Redesigned chromosome conformation capture with increased scaleability and sensitivity"
+title:  "Redesigned chromosome conformation capture with increased scalability and sensitivity"
 author: Jens Preussner
 tags: chromosome capture methods
 cover: "assets/dyes.jpg"
