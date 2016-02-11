@@ -3,7 +3,7 @@ layout: post
 title:  "N1-methyladenosine exhibits post-transcriptional regulatory effects"
 author: Jens Preussner
 tags: methods
-cover: "assets/dyes.jpg"
+cover: "assets/cell.jpg"
 categories: reading bioinformatics
 ---
 
