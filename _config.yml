@@ -17,6 +17,7 @@ logo: "assets/logo.png"
 
 # Build settings
 markdown: kramdown
+encoding: UTF-8
 paginate: 10
 paginate_path: "/page:num/"
 
