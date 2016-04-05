@@ -12,7 +12,7 @@ description: >
   I&#39;m a computational biologist at the MPI-HLR, interested in sustainability and clever solutions, as well as sequencing, single cells and regeneration.
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://jenzopr.github.io" # the base hostname & protocol for your site
-cover: "assets/header_image.jpg"
+cover: "assets/sailing.jpg"
 logo: "assets/logo.png"
 
 # Build settings
