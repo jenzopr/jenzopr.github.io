@@ -11,15 +11,15 @@ Often in modelling of statistical processes with basic distributions, like Gauss
 What is asked for, is often a mixture of distributions that, taken together, fit the observed data more closely.
 
 Formally, a distribution *f* consisting of a finite number of *K* component distributions is a *mixture*: 
-![equation](http://www.sciweavers.org/tex2img.php?eq=f%28x%29+%3D++%5Csum_k%5EK++%5Cpi_k+f_k%28x%29&bc=White&fc=Black&im=png&fs=12&ff=arev)
+![mixture](http://www.sciweavers.org/tex2img.php?eq=f%28x%29+%3D++%5Csum_k%5EK++%5Cpi_k+f_k%28x%29&bc=White&fc=Black&im=png&fs=12&ff=arev)
 
 with the mixing weights 
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Cpi_k+%3E+0%2C++%5Csum_k+%5Cpi_k+%3D+1&bc=White&fc=Black&im=png&fs=12&ff=arev)
+![weights](http://www.sciweavers.org/tex2img.php?eq=%5Cpi_k+%3E+0%2C++%5Csum_k+%5Cpi_k+%3D+1&bc=White&fc=Black&im=png&fs=12&ff=arev)
 
 The recipe for generating data points can be read out easily from the equations above:
 
-1. Pick a distribution *f_k* with probability *\pi_k* 
+1. Pick a distribution *f<sub>k</sub>* with probability *pi<sub>k</sub>* 
 2. Generate an observation according to the distribution picked in 1.
 
 Obversely, determining the value of \pi, as well as the parameters of the component distributions from observed data points is challenging.
@@ -30,7 +30,11 @@ Often, the model consists of distributions of the same parametric family, e.g. a
 Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. JAGS (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get an brief overview.
 
 Here, we'll use [rjags](http://runjags.sourceforge.net/), an R package that enables us to use JAGS from within R (and much more) to infer parameters of a mixture model of different parametric distributions. 
-We'll go through three steps: (1) Simulation of data generated according to the model. (2) Formulating the model for JAGS. (3) Running the model with rjags to infer its latent parts.
+We'll go through three steps:
+
+1. Simulation of data generated according to the model.
+2. Formulating the model for JAGS.
+3. Running the model with rjags to infer its latent parts.
 
 First, lets generate some data for a two component mixture model:
 {% highlight R %}
@@ -51,7 +55,7 @@ hist(Y, breaks=100)
 The code above, generates `N <- 100` data points from a mixture with a uniform and a normal component. With a probability of `alpha <- 0.3` we choose from the **uniform** distribution, with `1-alpha` we choose from the **normal** distribution.
 Below, you can see the histogram of the generated data. Visually, it's quite clear, that two underlying processes were used to generate the data.
 
-![hist-of-Y](assets/Y-hist.png)
+![hist-of-Y](http://jenzopr.github.io/assets/Y-hist.png)
 
 Next, we will formulate our Bayesian model in the language, that JAGS is able to understand. JAGS will take care of Gibbs sampling and adapt the hyperparameters during this process.
 
@@ -102,8 +106,8 @@ tau ~ dgamma(0.01, 0.01)
 
 *Explanation*:
 
-The vector *probs* will store the probabilities *alpha* and *1-alpha*. Its prior distribution follows a dirichlet distribution of order two.
-A normal prior is put on the scalars *lower*, *upper* and *mu*, and a gamma prior is set for *tau*. The last part are instructions for *rjags*, which parameters to monitor during sampling and where to take the data from.
+The vector `probs` will store the probabilities `alpha` and `1-alpha`. Its prior distribution follows a dirichlet distribution of order two.
+A normal prior is put on the scalars *lower*, *upper* and *mu*, and a gamma prior is set for *tau*. The last part are instructions for **rjags**, which parameters to monitor during sampling and where to take the data from.
 As you can see, the input to JAGS is only the observed values (*Y*), as well as the number of observations (*N*), the vector of Ones and a constant (see below).
 
 {% highlight R %}
@@ -124,7 +128,7 @@ results
 
 *Explanation*:
 
-Back in R, we have to **guess** initial values for the hyperparameters. The *rjags* call starts the sampling by JAGS, using 1000 steps to adapt the model and 4000 steps to burn-in (defaults). After that, the model is run for 10000 iterations.
+Back in R, we have to *guess* initial values for the hyperparameters. The **run.jags** call starts the sampling by JAGS, using 1000 steps to adapt the model and 4000 steps to burn-in (defaults). After that, the model is run for 10000 iterations.
 
 The results are given as a table (truncated): 
 
@@ -137,12 +141,13 @@ upper | 50.992 | 1.6 | 5222 | 0.046
 mu | 4.9559 | 0.11 | 14504 | -0.0026
 tau | 1.2 | 0.24 | 7913 | 0.0329
 
-Looking at the mean column, it seems that the model recovered the true parameters very well. Only the hyperparameter **lower** suffered from high autocorrelation and a small effective sample size.
+Looking at the mean column, it seems that the model recovered the true parameters very well. Only the hyperparameter *lower* suffered from high autocorrelation and a small effective sample size.
 What those numbers mean will be explored in a upcoming post. 
 
 
 *Acknowledgements*: 
-* Matt Denwood, for his very valuable help with the JAGS model. Credits to him for the One's trick and the subtraction of the constant.
-* Elizabeth Garrett-Mayer, for her clear explanation on latent class models
+
+* **Matt Denwood**, for his very valuable help with the JAGS model. Credits to him for the One's trick and the subtraction of the constant.
+* **Elizabeth Garrett-Mayer**, for her clear explanation on latent class models
 
 This post is a follow-up of a question at [stackoverflow.com](http://stackoverflow.com/questions/36609365/how-to-model-a-mixture-of-finite-components-from-different-parametric-families-w).
