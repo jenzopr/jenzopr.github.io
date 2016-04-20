@@ -11,23 +11,23 @@ Often in modelling of statistical processes with basic distributions, like Gauss
 What is asked for, is often a mixture of distributions that, taken together, fit the observed data more closely.
 
 Formally, a distribution *f* consisting of a finite number of *K* component distributions is a *mixture*: 
-![mixture](http://www.sciweavers.org/tex2img.php?eq=f%28x%29+%3D++%5Csum_k%5EK++%5Cpi_k+f_k%28x%29&bc=White&fc=Black&im=png&fs=12&ff=arev)
+![mixture](http://jenzopr.github.io/assets/jags-finite-component-mixture/mixture.png)
 
 with the mixing weights 
 
-![weights](http://www.sciweavers.org/tex2img.php?eq=%5Cpi_k+%3E+0%2C++%5Csum_k+%5Cpi_k+%3D+1&bc=White&fc=Black&im=png&fs=12&ff=arev)
+![weights](http://jenzopr.github.io/assets/jags-finite-component-mixture/weights.png)
 
 The recipe for generating data points can be read out easily from the equations above:
 
 1. Pick a distribution *f<sub>k</sub>* with probability *pi<sub>k</sub>* 
 2. Generate an observation according to the distribution picked in 1.
 
-Obversely, determining the value of \pi, as well as the parameters of the component distributions from observed data points is challenging.
+Obversely, determining the value of *pi*, as well as the parameters of the component distributions from observed data points is challenging.
 
 Many examples exist in the literature, where mixture models were used to infer the latent statistical process that generated the observed data.
 Often, the model consists of distributions of the same parametric family, e.g. a mixture of two or more Gaussian distributions. Potentially, mathematical tractability has (so far) prevented us from mixture models of different parametric distributions. 
 
-Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. JAGS (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get an brief overview.
+Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. [JAGS](https://sourceforge.net/projects/mcmc-jags/) (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get an brief overview.
 
 Here, we'll use [rjags](http://runjags.sourceforge.net/), an R package that enables us to use JAGS from within R (and much more) to infer parameters of a mixture model of different parametric distributions. 
 We'll go through three steps:
@@ -55,7 +55,7 @@ hist(Y, breaks=100)
 The code above, generates `N <- 100` data points from a mixture with a uniform and a normal component. With a probability of `alpha <- 0.3` we choose from the **uniform** distribution, with `1-alpha` we choose from the **normal** distribution.
 Below, you can see the histogram of the generated data. Visually, it's quite clear, that two underlying processes were used to generate the data.
 
-![hist-of-Y](http://jenzopr.github.io/assets/Y-hist.png)
+![hist-of-Y](http://jenzopr.github.io/assets/jags-finite-component-mixture/Y-hist.png)
 
 Next, we will formulate our Bayesian model in the language, that JAGS is able to understand. JAGS will take care of Gibbs sampling and adapt the hyperparameters during this process.
 
