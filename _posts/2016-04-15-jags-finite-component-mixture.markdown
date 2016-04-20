@@ -4,7 +4,7 @@ title:  "A two-component mixture model of different parametric distributions"
 author: Jens Preussner
 tags: methods r jags
 cover: "assets/dyes.jpg"
-categories: bioinformatics
+categories: stats
 ---
 
 Often in modelling of statistical processes with basic distributions, like Gaussian, Beta or Gamma, the observed data is not captured very well by the chosen distribution.
