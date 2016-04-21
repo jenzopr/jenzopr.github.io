@@ -27,7 +27,7 @@ Obversely, determining the value of *&pi;*, as well as the parameters of the com
 Many examples exist in the literature, where mixture models were used to infer the latent statistical process that generated the observed data.
 Often, the model consists of distributions of the same parametric family, e.g. a mixture of two or more Gaussian distributions. Potentially, mathematical tractability has (so far) prevented us from mixture models of different parametric distributions. 
 
-Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. [JAGS](https://sourceforge.net/projects/mcmc-jags/) (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get an brief overview.
+Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. [JAGS](https://sourceforge.net/projects/mcmc-jags/) (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get a brief overview.
 
 Here, we'll use [rjags](http://runjags.sourceforge.net/), an R package that enables us to use JAGS from within R (and much more) to infer parameters of a mixture model of different parametric distributions. 
 We'll go through three steps:
@@ -148,6 +148,6 @@ What those numbers mean will be explored in a upcoming post.
 *Acknowledgements*: 
 
 * **Matt Denwood**, for his very valuable help with the JAGS model. Credits to him for the One's trick and the subtraction of the constant.
-* **Elizabeth Garrett-Mayer**, for her clear explanation on latent class models
+* **Elizabeth Garrett-Mayer**, for her clear explanation on latent class models.
 
 This post is a follow-up of a question at [stackoverflow.com](http://stackoverflow.com/questions/36609365/how-to-model-a-mixture-of-finite-components-from-different-parametric-families-w).
