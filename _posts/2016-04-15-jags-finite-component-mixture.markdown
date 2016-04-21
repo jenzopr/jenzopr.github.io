@@ -29,12 +29,12 @@ Often, the model consists of distributions of the same parametric family, e.g. a
 
 Luckily, software development of recent years has brought us efficient programs that can discover *latent* parts of such complex models. [JAGS](https://sourceforge.net/projects/mcmc-jags/) (Plummer, 2003) is one of those efficient Gibbs samplers that implement Bayesian models using Markov Chain Monte Carlo (MCMC) simulation. I won't go into details here, but the willing reader may be referred to Chapters 1 to 8 of *Doing Bayesian Data Analysis*, an excellent book from John Kruschke, to get a brief overview.
 
-Here, we'll use [rjags](http://runjags.sourceforge.net/), an R package that enables us to use JAGS from within R (and much more) to infer parameters of a mixture model of different parametric distributions. 
+Here, we'll use [runjags](http://runjags.sourceforge.net/), an R package that enables us to use JAGS from within R (and much more) to infer parameters of a mixture model of different parametric distributions. 
 We'll go through three steps:
 
 1. Simulation of data generated according to the model.
 2. Formulating the model for JAGS.
-3. Running the model with rjags to infer its latent parts.
+3. Running the model with run.jags to infer its latent parts.
 
 First, lets generate some data for a two component mixture model:
 {% highlight R %}
@@ -107,7 +107,7 @@ tau ~ dgamma(0.01, 0.01)
 *Explanation*:
 
 The vector `probs` will store the probabilities `alpha` and `1-alpha`. Its prior distribution follows a dirichlet distribution of order two.
-A normal prior is put on the scalars *lower*, *upper* and *mu*, and a gamma prior is set for *tau*. The last part are instructions for **rjags**, which parameters to monitor during sampling and where to take the data from.
+A normal prior is put on the scalars *lower*, *upper* and *mu*, and a gamma prior is set for *tau*. The last part are instructions for **run.jags**, which parameters to monitor during sampling and where to take the data from.
 As you can see, the input to JAGS is only the observed values (*Y*), as well as the number of observations (*N*), the vector of Ones and a constant (see below).
 
 {% highlight R %}
