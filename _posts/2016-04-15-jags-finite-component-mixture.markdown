@@ -19,10 +19,10 @@ with the mixing weights
 
 The recipe for generating data points can be read out easily from the equations above:
 
-1. Pick a distribution *f<sub>k</sub>* with probability *pi<sub>k</sub>* 
+1. Pick a distribution *f<sub>k</sub>* with probability *&pi;<sub>k</sub>* 
 2. Generate an observation according to the distribution picked in 1.
 
-Obversely, determining the value of *pi*, as well as the parameters of the component distributions from observed data points is challenging.
+Obversely, determining the value of *&pi;*, as well as the parameters of the component distributions from observed data points is challenging.
 
 Many examples exist in the literature, where mixture models were used to infer the latent statistical process that generated the observed data.
 Often, the model consists of distributions of the same parametric family, e.g. a mixture of two or more Gaussian distributions. Potentially, mathematical tractability has (so far) prevented us from mixture models of different parametric distributions. 
