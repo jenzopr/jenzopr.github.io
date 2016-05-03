@@ -19,7 +19,7 @@ make
 make install
 {% endhighlight %}
 
-When configuring curl, make sure that *HTTPS* is listed as one of the supported protocols, since the new R version relies on *HTTPS* from curl.
+When configuring curl, make sure that **HTTPS** is listed as one of the supported protocols, since the new R version relies on **HTTPS** from curl.
 
 Then, download the R source code, configure and build:
 {% highlight bash %}
@@ -37,4 +37,11 @@ make check
 make install
 {% endhighlight %}
 
-In the code snippet above, we set the two environmental variables *LDFLAGS* and *CPPFLAGS* to the corresponding paths in the curl installation. This will make R use the newest curl.
+In the code snippet above, we set the two environmental variables **LDFLAGS** and **CPPFLAGS** to the corresponding paths in the curl installation. This will make R use the newest curl.
+
+**Bonus**: If you keep your R libraries in a separate folder and you want to update all packages, use the command below:
+
+{% highlight bash %}
+R
+> update.packages(checkBuilt=TRUE, ask=FALSE)
+{% endhighlight %}
